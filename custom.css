@@ -5,11 +5,15 @@
     box-sizing: border-box;
     padding:0;
     margin:0;
-    font-family:"Montserrat", sans-serif;
+}
+
+body{
+    font-family:"Montserrat", Arial, Helvetica, sans-serif;
+    font-size:16px;
 }
 
 /*Start Header */
-img{
+#logo img{
     max-width:100%;
     height:auto;
 }
@@ -18,11 +22,14 @@ img{
     cursor: pointer;
 }
 
+
 .container{
     width:100%;
     max-width:100%;
     padding:15px;
     background:#333;
+    position:absolute;
+    top:0;
 }
 
 @media (min-width: 960px) {
@@ -50,7 +57,7 @@ img{
     color: white;
     display:inline-flex;
     text-decoration: none;
-    padding: .5em 1 .5em;
+    padding: 8px;
 }
 
 .nav_links a:hover{
@@ -63,58 +70,54 @@ img{
 
 
 /* Main Content*/
-p{
-    font: size 30px;
-    margin-top:60px;
-
-}
 
 .About{
     background:url(images/about_bg.gif);
-    /* position:absolute;
-    top:50px; */
-    background-size:cover;
-    height:700px;
-    background-attachment:fixed;
+    height:800px;
+    background-position: center;;
     background-repeat:no-repeat;
-    background-position:center;
-    border: 2px solid red;
+    border: 2px solid #333;
 }
 
 /*About Me Content*/
 .flex-container {
-    margin-left:20%;
-    margin-right:20%;
-    margin-top:0;
-    margin-bottom:0;
-    display: flex;
-    border: 2px solid #333;
-    margin-bottom: 2rem;
-    height:600px;
+    display:flex;
     justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #333;
+    height:500px;
 }
 
-.flex-child:first-child {
-    flex: 1;
-    background-size: cover;
-    background-position: center;
+.flex-child{
+    display: inline-block;
+    padding: 10px 0;
+ }
+
+.flex-child img{
     width:100%;
-    background-image: url("images/chris-pic-small.JPG");
-    object-fit:contain;
+    height: 100%;
+    margin-right: 10px;
+    text-align:center;
+    object-fit:cover;
 }
 
-.flex-child:last-child{
-    margin: 2rem;
-    flex: 2;
+.flex_child p{
+    font-size:15px;
+    margin-top:60px;
 }
 
 .Portfolio{
     background:url(images/portfolio_bg.jpg);
     background-size:cover;
-    height:700px;
+    height:800px;
     background-attachment:no-repeat;
     background-repeat:no-repeat;
     background-position:center;
+    border: 2px solid #333;
 }
 
 .outer {
@@ -143,6 +146,7 @@ p{
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-position:center;
+    border: 2px solid #333;
 }
 
 .Blog{
@@ -152,30 +156,48 @@ p{
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-position:center;
+    border: 2px solid #333;
 }
 
 /*Sidebar Navigation =*/
-#sidebar_links {
-    width: 12%;
-    height: 200px; 
-    position: -webkit-sticky;
-    padding:20px;
-    position: sticky;
-    top: 50%;
-    background:gray;
+
+#sidebar{
+    width: 14%;
+    height:220px;
+    margin:20px;
+    display: flex;
+    float:left;
+    position:sticky;
+    top:40%;
+    background-color: gray;
     border: 2px solid black;
-    border-radius: 30px;
+    border-radius: 10px;
+}
+
+.sidebar_links {
+    display:flex;
+    width:100%;
+    text-align:center;
+    justify-content:space-evenly;
+    flex-direction:column;
+    background:#333
   }
 
-#sidebar_links a {
+.sidebar_links li{
+    padding-left:5px;
+    justify-content:space-evenly;
+}
+
+.sidebar_links a {
     text-decoration: none;
     font-size: 16px;
-    color: black;
-    display:block;
+    color: white;
+    display:flexbox;
     padding-bottom: 5px;
 }
 
-#sidebar_links a:hover{
+
+.sidebar_links a:hover{
     color: rgba(44, 88, 222, 0.8);
     transition:all 0.5s ease 0s;
     text-decoration-style: none;
