@@ -9,15 +9,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <!--Header Start-->
-        <header class="main_header">
-            <div class="container">
-                <h1 id="logo">
-                    <img src="images/name_logo.svg" alt="Chris's Picture">
-                </h1>
-
-                <nav class="nav_links">
-                    <ul class="nav_links list">
+        
+        <div class="wrapper">
+            <!--Header Start-->
+            <header class="main_header">
+                <nav>
+                    <h1 id="logo">
+                        <img src="images/name_logo.svg" alt="Chris's Picture">
+                    </h1>
+                    <ul class="nav_main list">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About Me</a></li>
                         <li><a href="#">Portfolio</a></li>
@@ -25,62 +25,205 @@
                         <li><a href="#">Not-So-Personal Blog</a></li>
                     </ul>
                 </nav>
-            </div>
-        </header>
-        <!--Header End-->
-        <div id="sidebar">
-            <div class="sidebar_links">
-                <ul class="fa-ul">
-                <li><i class="fa-li fa fa-home"></i><a href="#">Home</a></li>
-                <li><i class="fa-li fa fa-user"></i><a href="#">About Me</a></li>
-                <li><i class="fa-li fa fa-suitcase"></i><a href="#">Portfolio</a></li>
-                <li><i class="fa-li fa fa-sort-down"></i><a href="#">Enlight Pomodoro</a></li>
-                <li><i class="fa-li fa fa-book"></i><a href="#">Not-So-Personal Blog</a></li>
-            </ul>
+            </header>
+            <!--Header End-->
 
-            </div>
-        </div>
-
-        <!--Parallax Sections-->
-        <!--Main Class for content-->
-        <div class="main_content"></div>
-            <div class="About">
-                <div class="flex-container">
-                    <div class="flex-child">
-                        <img src="images/chris-pic-medium.JPG">
-                    </div>
-
-                    <div class="flex-child">
-                        <h1>Christopher Valencia</h1>
-                        <h2>MechE @ University of Pennsylvania</h2>
-                            <p>Hey Everyone! My name is Christopher Valencia, but the casual “Chris” works for me. I am a
-                                Senior at the University of Pennsylvania with a major in Mechanical Engineering, specifically
-                                concentrating on Energy, Fluids, and Thermal Systems and possible minor in Computer
-                                Science. Personally, I have always been fascinated by the way physical systems
-                                work—whether it’s a mechanical system like a car or a piece of code that allows me to get my
-                                home 3D Printer to make an idea I have into a material reality. When I am not home, you can
-                                find me either at a local gym or at local salsa dancing events wherever I can find one. I want to
-                                live my life as a constant learner, so I am super excited to exchange experiences and working
-                                with you!</p>
-                    </div>
+            <div id="sidebar">
+                <div class="sidebar_links">
+                    <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-home"></i><a href="#">Home</a></li>
+                    <li><i class="fa-li fa fa-user"></i><a href="#">About Me</a></li>
+                    <li><i class="fa-li fa fa-suitcase"></i><a href="#">Portfolio</a></li>
+                    <li><i class="fa-li fa fa-sort-down"></i><a href="#">Enlight Pomodoro</a></li>
+                    <li><i class="fa-li fa fa-book"></i><a href="#">Not-So-Personal Blog</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <!--Portfolio Start-->
-            <div class="Portfolio">
+            <!--Main Class for content-->
+            <div class="main_content">
+                <div id="About">
+                    <div class="flex-container">
+                        <div class="about_img">
+                            <img src="images/chris-pic-medium.JPG">
+                        </div>
+                        <div class="info_content">
+                            <!-- <h2>MechE @ University of Pennsylvania</h2> -->
+                                <p>Hey Everyone! My name is Christopher Valencia, but the casual “Chris” works for me. I am a
+                                    Senior at the University of Pennsylvania with a major in Mechanical Engineering, specifically
+                                    concentrating on Energy, Fluids, and Thermal Systems and possible minor in Computer
+                                    Science. Personally, I have always been fascinated by the way physical systems
+                                    work—whether it’s a mechanical system like a car or a piece of code that allows me to get my
+                                    home 3D Printer to make an idea I have into a material reality. When I am not home, you can
+                                    find me either at a local gym or at local salsa dancing events wherever I can find one. I want to
+                                    live my life as a constant learner, so I am super excited to exchange experiences and working
+                                    with you!
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Portfolio Start-->
+                <div id="Portfolio">
+                    <div class="grid-container" style="padding-left: 20%">
+                        <ul class="list">  
+                            <li class="list-item">  
+                            <div class="list-content">    
+                            <h2>Senior Design</h2>  
+                            <img src="" alt="" />  
+                            <p>This project aims to...</p>  
+                            <a href="">More :)</a>  
+                            </div>  
+                            </li>  
+                            <li class="list-item">  
+                                <div class="list-content">  
+                                <h2>Stirling Engine</h2>  
+                                <p>This project aims to...</p>  
+                                <a href="">More :)</a>  
+                                </div>  
+                            </li>  
+                            <li class="list-item">  
+                                <div class="list-content">  
+                                <h2>Arm</h2>  
+                                <p>This project aims to...</p>  
+                                <a href="">More :)</a>  
+                                </div>  
+                            </li>  
+                            <li class="list-item">  
+                                <div class="list-content">    
+                                <h2>Arduino Sink</h2>  
+                                <img src="" alt="" />  
+                                <p>This project aims to...</p>  
+                                <a href="">More :)</a>  
+                            </div>  
+                            </li>  
+                            <li class="list-item">  
+                            <div class="list-content">  
+                                <h2>Pacman</h2>  
+                                <p>This project aims to...</p>  
+                                <a href="">More :)</a>  
+                            </div>  
+                            </li>  
+                            <li class="list-item">  
+                            <div class="list-content">  
+                                <h2>Face Recognition Machine Learning</h2>  
+                                <p>This project aims to...</p>  
+                                <a href="">More :)</a>  
+                            </div>  
+                            </li>  
+                        </ul>
+                     </div>
+                </div>
+                <!--Portfolio End-->
+
+                <!--Pomodoro Timer Start-->
+                <div id="Timer">
+                    <h3>Pomodoro Timer</h3>
+                    <div id="container">
+                        <p id="work" class="label">Work:</p><p id="break" class="label">Break:</p><p id="cycles" class="label">Cycles:</p>
+                        <!--Work Timer-->
+                        <div id="work-timer" class="timer">
+                            <p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
+                        </div>
                 
-            </div>
-            <!--Portfolio End-->
+                        <!--Cycle Counter-->
+                        <p id="counter" class="timer">0</p>
+                
+                        <!--Break Timer-->
+                        <div id="break-timer" class="timer">
+                            <p id="b_minutes">05</p><p class="semicolon">:</p><p id="b_seconds">00</p>
+                        </div>
+                        <button id="start" class="btn">Start</button>
+                        <button id="stop" class="btn">Pause</button>
+                        <button id="reset" class="btn">Reset</button>
+                    </div>
+                    
+                    <!-- <div id="pomodoro-container">
+                        <div id="pomodoro-clock">
+                            <div id="pomodoro-timer"></div>
+                            <div>
+                                <input
+                                  type="text"
+                                  id="pomodoro-clock-task"
+                                  placeholder="Enter your task..."
+                                />
+                              </div>
+                            <div id="pomodoro clock-actions">
+                                <button id="pomodoro-start">Start</button>
+                                <button id="pomodoro-pause">Pause</button>
+                                <button id="pomodoro-stop">Stop</button>
+                            </div>
 
-            <!--Pomodoro Timer Start-->
-            <div class="Timer">
-                <h1 id="test"></h1>
-            </div>
-            <!--Pomodoro Timer Ends-->
+                            <div id="pomodoro-info">
+                                <h3>Your Sessions </h3>
+                                <ul id="pomodoro-sessions">
+                                </ul>
+                              </div>
 
-            <!--Blog Begins-->
-            <div class="Blog"></div>
-            <!--Blog Ends-->
+                        </div>
+                    </div> -->
+
+
+                </div>
+                <!--Pomodoro Timer Ends-->
+
+                <!--Blog Begins-->
+                <div id="Blog">
+                    <div class="grid-container" style="padding-left: 20%">
+                        <ul class="list">  
+                            <li class="list-item">  
+                            <div class="list-content">    
+                            <h2>Senior Design</h2>  
+                            <img src="" alt="" />  
+                            <p>This project aims to...</p>  
+                            <a href="">More :)</a>  
+                            </div>  
+                            </li>  
+                            <li class="list-item">  
+                                <div class="list-content">  
+                                <h2>Stirling Engine</h2>  
+                                <p>This project aims to...</p>  
+                                <a href="">More :)</a>  
+                                </div>  
+                            </li>  
+                            <li class="list-item">  
+                                <div class="list-content">  
+                                <h2>Arm</h2>  
+                                <p>This project aims to...</p>  
+                                <a href="">More :)</a>  
+                                </div>  
+                            </li>  
+                            <li class="list-item">  
+                                <div class="list-content">    
+                                <h2>Arduino Sink</h2>  
+                                <img src="" alt="" />  
+                                <p>This project aims to...</p>  
+                                <a href="">More :)</a>  
+                            </div>  
+                            </li>  
+                            <li class="list-item">  
+                            <div class="list-content">  
+                                <h2>Pacman</h2>  
+                                <p>This project aims to...</p>  
+                                <a href="">More :)</a>  
+                            </div>  
+                            </li>  
+                            <li class="list-item">  
+                            <div class="list-content">  
+                                <h2>Face Recognition Machine Learning</h2>  
+                                <p>This project aims to...</p>  
+                                <a href="">More :)</a>  
+                            </div>  
+                            </li>  
+                        </ul>
+                     </div>
+                </div>
+                <!--Blog Ends-->
+            </div>
+            
+
+        <!-- Footer if Any-->
+        </div>
 
 
         <!--JQuery Links-->
