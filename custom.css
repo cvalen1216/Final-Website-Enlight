@@ -155,8 +155,19 @@ body{
 }
 .list-item {
     display: flex; 
-    padding: 0.5em;
-    width: 100%;
+    padding: 0.2em;
+    max-width: 100%;
+}
+
+.list-item a:hover{
+  opacity: 0.5;
+  /*
+  box-shadow: inset 0px 0px 0px 1px;
+  transition: transform 0.14s ease-in, text-shadow 0.1s ease-in;
+  will-change: transform;
+  cursor: pointer
+  +translate(0,-4px); */
+  
 }
 @media all and (min-width: 40em) {
     .list-item {
@@ -167,13 +178,75 @@ body{
     .list-item {
         width: 33.33%;
 }
+  
+#Senior_Design{
+  border-radius: var(--main-radius);
+  /*padding-left:  var(--main-padding);*/
+    border: var(--main-border);
+    grid-area: Senior_Design;
+    border: 2px solid;
+    background-attachment: fixed;
+    background: url(images/Bend_bg.png) center center;
+    background-size: contain;
+}  
+ 
+#Senior_Design a:hover{
+  opacity: 0.25;
+  box-shadow: inset 0px 0px 0px 1px;
+    transition: transform 0.14s ease-in, text-shadow 0.1s ease-in;
+    will-change:transform;
+    cursor: pointer
+    +translate(0,-4px);
+    
+}  
+
+#Wind_Turbine{
+    border-radius: var(--main-radius);
+    border: var(--main-border);
+    grid-area: Wind_Turbine;
+    border: 2px solid;
+    background-attachment: fixed;
+    background: url(images/Wind_Farm_JPG.jpg) center center;
+    background-size: cover;
+}  
+  
+#Stirling_Engine{
+   border-radius: var(--main-radius);
+    border: var(--main-border);
+    grid-area: Stirling_Engine;
+    border: 2px solid;
+    background-attachment: fixed;
+    background: url(images/Stirling_Engine.jpg) center center;
+    background-size: cover;
+}
+  
+#Pacman{
+  border-radius: var(--main-radius);
+    border: var(--main-border);
+    grid-area: Pacman;
+    border: 2px solid;
+    background-attachment: fixed;
+    background: url(images/Pacman.jpg) center center;
+    background-size: cover;
+}  
+
+#Face_Rec_Heat_Engine{
+  border-radius: var(--main-radius);
+    border: var(--main-border);
+    grid-area: Heat_Engine;
+    border: 2px solid;
+    background-attachment: fixed;
+    background: url(images/Heat_Engine_1.jpg) center center;
+    background-size: cover;
+}
 }
 .list-content {
     background-color: #fff;
     display: flex;
     flex-direction: column;
     padding: 1em;
-    width: 100%;
+    max-width: 100%;
+  overflow: hidden;
 }
 .list-content p {
     flex: 1 0 auto;
