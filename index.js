@@ -76,6 +76,22 @@ function stopInterval(){
 
 
 
+document.querySelectorAll(".list-content a").forEach(a => {
+    a.addEventListener("click", function(e){
+        let descContainer = this.parentNode.parentNode.parentNode.parentNode.parentNode.querySelector(".descriptionContainer p");
+        let descContainerTitle = this.parentNode.parentNode.parentNode.parentNode.parentNode.querySelector(".descriptionContainer h2");
+        e.preventDefault();
+        let desc = this.parentNode.querySelector(".description").innerText;
+        let title = this.parentNode.querySelector(".title");
+        if(title){
+            title = title.innerText;
+            descContainerTitle.innerText = title;
+        }
+        descContainer.innerText = desc;
+        descContainer.parentNode.style.display = "block";
+    });
+})
+
 // console.log(document.getElementById(pomodoro-timer))
 
 // const pomodoroTimer=document.querySelector(pomodoro-timer);
